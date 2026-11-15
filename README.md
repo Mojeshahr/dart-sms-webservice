@@ -89,6 +89,8 @@ pub.dev لازم نیست.
 | [token-list.dart](examples/v3/token-list.dart) | `TokenList` | فهرست قالب‌ها |
 | [send-token-single.dart](examples/v3/send-token-single.dart) | `SendTokenSingle` | ارسال قالب به یک شماره |
 | [send-token-single-get.dart](examples/v3/send-token-single-get.dart) | `SendTokenSingle` | همان، با `GET` |
+| [send-token-single-concat-param.dart](examples/v3/send-token-single-concat-param.dart) | `SendTokenSingleConcatParam` | مقادیر قالب در رشته `p` با جداکننده نقطه‌ویرگول |
+| [send-token-single-concat-param-get.dart](examples/v3/send-token-single-concat-param-get.dart) | `SendTokenSingleConcatParam` | همان، با `GET` |
 | [send-token-multi.dart](examples/v3/send-token-multi.dart) | `SendTokenMulti` | یک قالب، چند گیرنده |
 | [status-by-id.dart](examples/v3/status-by-id.dart) | `StatusById` | وضعیت با شناسه سامانه |
 | [status-by-user-trace-id.dart](examples/v3/status-by-user-trace-id.dart) | `StatusByUserTraceId` | وضعیت با شناسه خودتان |
@@ -104,7 +106,7 @@ pub.dev لازم نیست.
 
 ```dart
 final answer = await http.post(
-  Uri.parse('https://api.sms-webservice.com/api/V3/SendBulk'),
+  Uri.parse('https://www.payam-resan.com/api/V3/SendBulk'),
   headers: {'Content-Type': 'application/json; charset=utf-8'},
   body: jsonEncode({
     'ApiKey': apiKey,

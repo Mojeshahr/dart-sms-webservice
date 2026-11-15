@@ -15,7 +15,7 @@ import 'dart:io';
 
 Future<void> sendTokenSingleByQuery(String apiKey) async {
   final url =
-      Uri.parse('https://api.sms-webservice.com/api/V3/SendTokenSingle')
+      Uri.parse('https://www.payam-resan.com/api/V3/SendTokenSingle')
           .replace(queryParameters: {
     'ApiKey': apiKey,
     'TemplateKey': 'verifycode',

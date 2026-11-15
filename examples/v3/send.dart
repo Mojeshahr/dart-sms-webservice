@@ -15,7 +15,7 @@ import 'dart:io';
 Future<void> send(String apiKey, int sender) async {
   // متد replace خودش دقیقاً یک بار encode می‌کند. اگر متن را پیش از این هم
   // encode کنید، پیامک با نویسه‌های %D8 به گوشی می‌رسد.
-  final url = Uri.parse('https://api.sms-webservice.com/api/V3/Send').replace(
+  final url = Uri.parse('https://www.payam-resan.com/api/V3/Send').replace(
     queryParameters: {
       'ApiKey': apiKey,
       'Sender': '$sender',

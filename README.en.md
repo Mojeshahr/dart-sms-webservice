@@ -88,6 +88,8 @@ exception is `TokenList`, which the sandbox does not implement.
 | [token-list.dart](examples/v3/token-list.dart) | `TokenList` | The account's templates |
 | [send-token-single.dart](examples/v3/send-token-single.dart) | `SendTokenSingle` | Send a template to one number |
 | [send-token-single-get.dart](examples/v3/send-token-single-get.dart) | `SendTokenSingle` | The same, over `GET` |
+| [send-token-single-concat-param.dart](examples/v3/send-token-single-concat-param.dart) | `SendTokenSingleConcatParam` | Template values in one semicolon-separated `p` string |
+| [send-token-single-concat-param-get.dart](examples/v3/send-token-single-concat-param-get.dart) | `SendTokenSingleConcatParam` | The same, over `GET` |
 | [send-token-multi.dart](examples/v3/send-token-multi.dart) | `SendTokenMulti` | One template, many recipients |
 | [status-by-id.dart](examples/v3/status-by-id.dart) | `StatusById` | Status by the service's id |
 | [status-by-user-trace-id.dart](examples/v3/status-by-user-trace-id.dart) | `StatusByUserTraceId` | Status by your own id |
@@ -102,7 +104,7 @@ and the `Success` check:
 
 ```dart
 final answer = await http.post(
-  Uri.parse('https://api.sms-webservice.com/api/V3/SendBulk'),
+  Uri.parse('https://www.payam-resan.com/api/V3/SendBulk'),
   headers: {'Content-Type': 'application/json; charset=utf-8'},
   body: jsonEncode({
     'ApiKey': apiKey,

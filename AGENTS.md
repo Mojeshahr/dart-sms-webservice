@@ -1,7 +1,7 @@
 # Working with this repository
 
 You are looking at runnable Dart examples for the **Payam Resan** SMS web
-service (`api.sms-webservice.com`, API V3), an Iranian SMS provider. Someone is
+service (`www.payam-resan.com`, API V3), an Iranian SMS provider. Someone is
 probably asking you to add SMS to a Dart or Flutter project.
 
 Read Rule 1 before you write any code. It changes where the code goes.

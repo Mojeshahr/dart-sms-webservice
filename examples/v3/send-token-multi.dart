@@ -34,7 +34,7 @@ Future<void> sendTokenMulti(String apiKey) async {
 
   final client = HttpClient()..connectionTimeout = const Duration(seconds: 30);
   final request = await client.postUrl(
-      Uri.parse('https://api.sms-webservice.com/api/V3/SendTokenMulti'));
+      Uri.parse('https://www.payam-resan.com/api/V3/SendTokenMulti'));
   request.headers.contentType =
       ContentType('application', 'json', charset: 'utf-8');
   request.add(utf8.encode(payload));
